@@ -1,1 +1,2 @@
-# Music_synthesizer
+# MirrorNet : Sensorimotor Interaction Inspired Learning for Audio Synthesizer Controls
+
