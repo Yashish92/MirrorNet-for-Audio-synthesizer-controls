@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# March 22: Only change from the old code (10th Feb code) is removing the Sp=exp(SP) function
-
 from __future__ import print_function
 import argparse
 import time
@@ -28,9 +26,6 @@ import h5py
 import time
 import subprocess
 import logging
-
-# from IPython.display import Audio
-# import pyworld as pw
 import librosa
 
 from datetime import date
@@ -294,9 +289,6 @@ class encoder(nn.Module):
             this_input = self.CNN[i](this_input)
         # print (this_input.size(), 'this_input after CNN stack. Ecnoder-------') #64-256-401
 
-        # f0 = self.f0_seq(this_input) * 800  # limit the F0 range in [0, 800] #64-1-401
-        # sp = self.sp_seq(this_input) * 30  # limit the log(sp) in [-50, 50]   #64-513-401
-        # sp = self.sp_seq(this_input) + 1e-20    # limit the log(sp) in [-50, 50]   #64-513-401
 
         music = self.L2(this_input)  # 64-513-401
         music_last = self.last_layers(music)
@@ -532,10 +524,6 @@ def quickEval(epoch, ideal_h=False, train_E=True, train_D=True, loader="evaluati
             batch_h_pred = batch_music  # torch.cat([batch_f0, batch_sp, batch_music], 1)
 
         fs = 4000
-
-        # print(batch_h.size(), 'batch_h.size()')
-        # f0_temp = batch_h[:, 0:1, :].data.cpu().numpy().astype('float64')
-        # sp_temp = batch_h[:, 1:514, :].data.cpu().numpy().astype('float64')
         music_temp = batch_h[:, params:, :].data.cpu().numpy().astype('float64')  # Doubtful about the shape
 
         #### TRAINING ####
@@ -640,9 +628,6 @@ def new_training_technique(epoch, train_D=False, train_E=False, init=False):
         # h_hat = batch_music #torch.cat([batch_f0, batch_sp, batch_music], 1)
 
         if train_D and not init:
-            # if not init:
-            # f0_temp = batch_f0.data.cpu().numpy().astype('float64')
-            # sp_temp = batch_sp.data.cpu().numpy().astype('float64')
             music_tmp = h_hat.data.cpu().numpy().astype('float64')
             # music_tmp[:, 0, :] = (music_tmp[:, 0, :] * 12) +62
             # music_tmp[:, 1, :] = (music_tmp[:, 1, :] * 0.3) + 0.7
@@ -659,9 +644,6 @@ def new_training_technique(epoch, train_D=False, train_E=False, init=False):
             paras_c = [frmlen, tc, -2, np.log2(sampling_rate / 16000.0)]
 
             for j in range(music_tmp.shape[0]):
-                # f0 = f0_temp[j, :, :].reshape(-1).copy(order='C')  # 406
-                # sp = sp_temp[j, :, :].T.copy(order='C')  # 406, 513
-                # sp = np.exp(sp)  # from log scale to original scale required by WORLD
                 music = music_tmp[j, :, :].copy(order='C')  # 406, 513
 
                 y = music_syn.generate(music, engine, generator, parameters, rev_idx, pad=pad_render)
@@ -840,76 +822,6 @@ def trainTogether_newTechnique(epochs=None, save_better_model=False, loader_eval
     del training_loss_encoder
     del training_loss_decoder
 
-    #     if train_D and epoch % 5 == 0:  # chnged 5 to 1
-    #         print("EVAL")
-    #         total_loss_eval, encoder_loss_eval, decoder_loss_eval = quickEval(epoch, loader='evaluation',
-    #                                                                           train_D=train_D, train_E=train_E,
-    #                                                                           ideal_h=True)
-    #         print('Decoder:---', decoder_loss_eval)
-    #         print(
-    #             '--------------------------------------------------------------------------------------------------------')
-    #         print('Encoder:---', encoder_loss_eval)
-    #         print("___________________")
-    #
-    #     if train_E and epoch % 5 == 0:  # chnged 5 to 1
-    #         print("EVAL")
-    #         total_loss_eval, encoder_loss_eval, decoder_loss_eval = quickEval(epoch, loader='evaluation',
-    #                                                                           train_D=train_D, train_E=train_E,
-    #                                                                           ideal_h=True)
-    #         print('Decoder:---', decoder_loss_eval)
-    #         print(
-    #             '--------------------------------------------------------------------------------------------------------')
-    #         print('Encoder:---', encoder_loss_eval)
-    #         print("___________________")
-    #
-    #     if train_D and epoch % 10 == 0:  # changed 10 to 1
-    #
-    #         if save_better_model:
-    #
-    #             if train_E:
-    #                 validation_loss_encoder.append(encoder_loss_eval)
-    #                 if epoch >= 10 and np.min(validation_loss_encoder) == validation_loss_encoder[-1]:
-    #                     with open(base_dir + exp_new + '/net/Gui_model_weight_E1.pt', 'wb') as f:
-    #                         torch.save(E.cpu().state_dict(), f)
-    #                     print("We saved encoder!")
-    #                     print()
-    #
-    #             if train_D:
-    #                 validation_loss_decoder.append(decoder_loss_eval)
-    #                 # If we found a best model we save it!
-    #                 if epoch >= 10 and np.min(validation_loss_decoder) == validation_loss_decoder[-1]:
-    #                     with open(base_dir + exp_new + '/net/Gui_model_weight_D1.pt', 'wb') as f:
-    #                         torch.save(D.cpu().state_dict(), f)
-    #                     print("We saved decoder!")
-    #                     print()
-    #
-    # if save_better_model and train_D:
-    #     D.load_state_dict(torch.load('tmp/net/Gui_model_weight_D1.pt'))
-    # if save_better_model and train_E:
-    #     E.load_state_dict(torch.load('tmp/net/Gui_model_weight_E1.pt'))
-    #
-    #     # if train_E
-    #
-    # if train_D:
-    #     print("Sequence of losses between D and W:")
-    #     print(new_loss)
-    #
-    #     plt.title("Evolution of the difference between D(h_hat) and W(h_hat) during training")
-    #     plt.plot(new_loss)
-    #     plt.savefig(out + "/loss/loss_" + name + ".eps")
-    #     plt.close()
-    #
-    # if train_D:
-    #     plt.title("Decoder Loss Eval")
-    #     plt.plot(decoder_loss_eval)
-    #     plt.savefig(out + "/loss/decoder_loss_eval_" + name + ".eps")
-    #     plt.close()
-    #
-    # if train_E:
-    #     plt.title("Encoder Loss Eval")
-    #     plt.plot(encoder_loss_eval)
-    #     plt.savefig(out + "/loss/encoder_loss_eval_" + name + ".eps")
-    #     plt.close()
 
 
 def generate_figures(mode="evaluation", name="", load_weights=("", "")):
@@ -976,23 +888,14 @@ def generate_figures(mode="evaluation", name="", load_weights=("", "")):
 
         # predict parameters through waveform
         batch_h_hat = E(batch_spec)
-        # batch_h_hat = transform_params(batch_h_hat)
-        # print(batch_h_hat)
 
-        ############# World ###################################################################################################
         fs = 8000
-        # mel_b = librosa.filters.mel(16000, 1024, n_mels=256)
-        # f0_temp = batch_h_hat[:, 0:1, :].data.cpu().numpy().astype('float64')
-        # sp_temp = batch_h_hat[:, 1:514, :].data.cpu().numpy().astype('float64')
         music_temp = batch_h_hat[:, 0:params, :].data.cpu().numpy().astype('float64')
         # music_temp[:, 0, :] = (music_temp[:, 0, :] * 12) +62
         # music_temp[:, 1, :] = (music_temp[:, 1, :] * 0.3) + 0.7
         # music_temp[:, 2, :] = (music_temp[:, 2, :] * 0.5) + 0.4
         # music_temp[:, 3, :] = (music_temp[:, 3, :] * 50) + 50
 
-        # f0_temp = batch_h[:,0:1,:].data.cpu().numpy().astype('float64')
-        # sp_temp = batch_h[:,1:129,:].data.cpu().numpy().astype('float64')
-        # ap_temp = batch_h[:,129:,:].data.cpu().numpy().astype('float64')
         # print(music_temp[1,:,:])
         # print(music_temp[2,:,:])
         # print(music_temp[3,:,:])
@@ -1011,9 +914,6 @@ def generate_figures(mode="evaluation", name="", load_weights=("", "")):
         # print(np.log2(4000/ 16000))
 
         for j in range(music_temp.shape[0]):
-            # f0 = f0_temp[j, :, :].reshape(-1).copy(order='C')  # 406
-            # sp = sp_temp[j, :, :].T.copy(order='C')  # 406, 513
-            # sp = np.exp(sp)  # from log scale to original scale required by WORLD
             music = music_temp[j, :, :].copy(order='C')  # 406, 513
 
             # print(music.shape)
@@ -1055,23 +955,13 @@ def generate_figures(mode="evaluation", name="", load_weights=("", "")):
             spec_wav[j, :, 0:spec_len] = (nsl.wav2aud(nsl.unitseq(y), paras_c).T)[:, 0:spec_len]
             # print((nsl.wav2aud(nsl.unitseq(y), paras_c)).shape)
 
-        # f0 = batch_h[:, 0:1, :].data.cpu().numpy().astype('float64')
-        # sp = batch_h[:, 1:514, :].data.cpu().numpy().astype('float64')
         music = batch_h[:, 0:params_ideal, :].data.cpu().numpy().astype('float64')
-        # f0 = batch_h[:,0:1,:].data.cpu().numpy().astype('float64')
-        # sp = batch_h[:,1:129,:].data.cpu().numpy().astype('float64')
-        # ap = batch_h[:,129:,:].data.cpu().numpy().astype('float64')
         ## SAVE ALL FIGURES
 
         # music_temp[:, 0, :] = (music_temp[:, 0, :] * 12) +62
         # music_temp[:, 1, :] = (music_temp[:, 1, :] * 0.3) + 0.7
         # music_temp[:, 2, :] = (music_temp[:, 2, :] * 0.5) + 0.4
         # music_temp[:, 3, :] = (music_temp[:, 3, :] * 50) + 50
-
-        # f0_random = batch_f0 + (torch.rand(f0_temp.shape[0],f0_temp.shape[1], f0_temp.shape[2]) - 0.5)*10
-        # sp_random = batch_sp + (torch.rand(sp_temp.shape[0], sp_temp.shape[1], sp_temp.shape[2]) - 0.5)*5
-        # ap_random = batch_ap + torch.rand(ap_temp.shape[0], ap_temp.shape[1], ap_temp.shape[2]) - 0.5
-
         # batch_h_random = torch.cat([f0_random, sp_random, ap_random], 1)
 
         local_out_init += "/latent_space/"
@@ -1085,18 +975,11 @@ def generate_figures(mode="evaluation", name="", load_weights=("", "")):
         music_hat_saved = np.zeros((num, params, N), dtype=np.float64)
         # sp_hat_saved = np.zeros((num, 513, 251), dtype=np.float64)
         music_ideal_saved = np.zeros((num, params_ideal, N), dtype=np.float64)
-        # sp_ideal_saved = np.zeros((num, 513, 251), dtype=np.float64)
-        # f0_ideal_saved = np.zeros((num, 1, 251), dtype=np.float64)
-        # f0_hat_saved = np.zeros((num, 1, 251), dtype=np.float64)
         # print(num)
 
         for i in range(num):
             music_hat_saved[i, :, :] = music_temp[i, :, :]
             music_ideal_saved[i, :, :] = music[i, :, :]
-            # sp_hat_saved[i, :, :] = sp_temp[i, :, :]
-            # sp_ideal_saved[i, :, :] = sp[i, :, :]
-            # f0_ideal_saved[i, :, :] = f0[i, :, :]
-            # f0_hat_saved[i, :, :] = f0_temp[i, :, :]
 
         if not os.path.exists(local_out_init):
             os.makedirs(local_out_init)
@@ -1107,18 +990,6 @@ def generate_figures(mode="evaluation", name="", load_weights=("", "")):
         with open(local_out_init + 'ap_ideal.pkl', 'wb') as f:
             pkl.dump(music_ideal_saved, f)
 
-        # with open(local_out_init + 'sp_hat.pkl', 'wb') as f:
-        #     pkl.dump(sp_hat_saved, f)
-        #
-        # with open(local_out_init + 'sp_ideal.pkl', 'wb') as f:
-        #     pkl.dump(sp_ideal_saved, f)
-        #
-        # with open(local_out_init + 'f0_ideal.pkl', 'wb') as f:
-        #     pkl.dump(f0_ideal_saved, f)
-        #
-        # with open(local_out_init + 'f0_hat.pkl', 'wb') as f:
-        #     pkl.dump(f0_hat_saved, f)
-
         if not os.path.exists(local_out_init):
             os.makedirs(local_out_init)
 
@@ -1128,45 +999,6 @@ def generate_figures(mode="evaluation", name="", load_weights=("", "")):
 
             if not os.path.exists(local_out):
                 os.makedirs(local_out)
-
-            # plt.title("F0")
-            # plt.subplot(121)
-            # plt.title("from encoder (E(x))")
-            # plt.plot(f0_temp[i, 0, :])
-            # plt.subplot(122)
-            # plt.title("from world (ideal h)")
-            # plt.plot(f0[i, 0, :])
-            # plt.savefig(local_out + "f0.eps")
-
-            # if not SERVER:
-            #     plt.show()
-            # else:
-            #     plt.close()
-            #
-            # plt.title("Sp (in the exp domain)")
-            # plt.subplot(121)
-            # plt.title("from encoder (E(x))")
-            # plt.imshow(((sp_temp[i, :, :])), cmap='jet')
-            # plt.subplot(122)
-            # plt.title("from world (ideal h)")
-            # plt.imshow(((sp[i, :, :])), cmap='jet')
-            # plt.colorbar()
-            # plt.savefig(local_out + "sp.eps")
-
-            # if not SERVER:
-            #     plt.show()
-            # else:
-            #     plt.close()
-
-            # plt.imshow((sp[i, :, :]))
-            # plt.title("SP original")
-            # plt.colorbar()
-            # plt.savefig(local_out + "/sp_only.eps")
-            #
-            # if not SERVER:
-            #     plt.show()
-            # else:
-            #     plt.close()
 
             params_labels = [' ', 'pitch', 'duration', 'volume', 'filter', 'resonance', 'attack', 'decay']
             #params_ideal_labels = [' ', 'pitch', 'duration', 'volume', 'filter', 'resonance', 'attack', 'decay', 'vib1', 'vib2', 'vib3']
@@ -1324,24 +1156,13 @@ def getSpectrograms(mode="evaluation"):
 
         # predict parameters through waveform
         batch_h_hat = E(batch_spec)
-        # batch_h_hat = transform_params(batch_h_hat)
-        # print(batch_music)
-        # batch_h_hat = batch_music #torch.cat([batch_f0, batch_sp, batch_music], 1)
 
-        ############# World ###################################################################################################
         fs = 8000
-        # mel_b = librosa.filters.mel(4000, 1024, n_mels=256)
-        # f0_temp = batch_h_hat[:, 0:1, :].data.cpu().numpy().astype('float64')
-        # sp_temp = batch_h_hat[:, 1:514, :].data.cpu().numpy().astype('float64')
         music_temp = batch_h_hat[:, 0:params, :].data.cpu().numpy().astype('float64')
         # music_temp[:, 0, :] = (music_temp[:, 0, :] * 12) +62
         # music_temp[:, 1, :] = (music_temp[:, 1, :] * 0.3) + 0.7
         # music_temp[:, 2, :] = (music_temp[:, 2, :] * 0.5) + 0.4
         # music_temp[:, 3, :] = (music_temp[:, 3, :] * 50) + 50
-
-        # f0_temp = batch_h_hat[:,0:1,:].data.cpu().numpy().astype('float64')
-        # sp_temp = batch_h_hat[:,1:129,:].data.cpu().numpy().astype('float64')
-        # ap_temp = batch_h_hat[:,129:,:].data.cpu().numpy().astype('float64')
 
         spec_wav = np.zeros((batch_wav.shape[0], 128, spec_len)).astype('float64')
         # spec_wav = np.zeros((batch_wav.shape[0], 128, 250)).astype('float64')
@@ -1349,9 +1170,6 @@ def getSpectrograms(mode="evaluation"):
         # print(music_temp.shape)
 
         for j in range(music_temp.shape[0]):
-            # f0 = f0_temp[j, :, :].reshape(-1).copy(order='C')  # 406
-            # sp = sp_temp[j, :, :].T.copy(order='C')  # 406, 513
-            # sp = np.exp(sp)  # from log scale to original scale required by WORLD
             music = music_temp[j, :, :].copy(order='C')  # 406, 513
             # y = pw.synthesize(f0, sp, ap, fs, frame_period=8.0)
             # print(music.mean(axis=0))
@@ -1389,9 +1207,6 @@ def getSpectrograms(mode="evaluation"):
         # plt.title('Spectrogram from DIVA (from encoder h)')  # World(E(H))
         # plt.savefig(out + "/spectrograms/" +"diva_spectrogram.eps")
 
-        # f0 = batch_h[:, 0:1, :].data.cpu().numpy().astype('float64')
-        # sp = batch_h[:, 1:514, :].data.cpu().numpy().astype('float64')
-        # music = batch_h[:, params:, :].data.cpu().numpy().astype('float64')
         music = batch_h[:, 0:params, :].data.cpu().numpy().astype('float64')
         # Rescaling for plotting
         # batch_h[:, 0, :] = (batch_h[:, 0, :] - 62)/12

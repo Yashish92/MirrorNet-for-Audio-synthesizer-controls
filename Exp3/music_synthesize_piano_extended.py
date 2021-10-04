@@ -1,7 +1,4 @@
 # %%
-
-# Author: Yashish Maduwantha 
-
 import argparse
 import librenderman as rm
 import numpy as np
@@ -284,38 +281,5 @@ if __name__ == "__main__":
     """
     param_array = [0.5, 0.5, 0, 0, 0, 0.01, 1, 1, 1, 0.5, 0, 0.58333333, 0.5, 0.5, 0.5, 0.5]
     music_synthesize(param_array, sampling_rate=22050)
-    # # Define arguments
-    # parser = argparse.ArgumentParser()
-    # # Data arguments
-    # parser.add_argument('--path', type=str, default='/home/yashish/Music_Synthesizer/diva_raw/raw/', help='')
-    # parser.add_argument('--output', type=str, default='outputs', help='')
-    # parser.add_argument('--dataset', type=str, default='toy', help='')
-    # parser.add_argument('--data', type=str, default='mel', help='')
-    # args = parser.parse_args()
-    # print('[Load the dataset]')
-    # # Take fixed batch
-    # loaded = np.load('Test_batch/0a1fa34a01aa41b6d380216df012d458_60_100.npz')
-    # # print(loaded)
-    # # print(loaded['param'])
-    # loaded_params, loaded_chars, loaded_audio = loaded["param"], loaded["chars"], loaded["audio"]
-    # # dic_params = dict(np.ndenumerate(loaded_params))
-    # # print(loaded_params)
-    # # print(fixed_params)
-    # print('[Create synth rendering]')
-    # final_params = ['ENV1: Decay', 'VCF1: FilterFM', 'OSC: Vibrato', 'OSC: FM',
-    #                 'VCF1: Feedback', 'ENV1: Attack', 'ENV1: Sustain',
-    #                 'OSC: Volume3', 'OSC: Volume2', 'OSC: OscMix',
-    #                 'VCF1: Resonance', 'VCF1: Frequency', 'OSC: Tune3',
-    #                 'OSC: Tune2', 'OSC: Shape1', 'OSC: Shape2']
-    # # Create synth rendering system
-    # engine, generator, param_defaults, rev_idx = create_synth('toy')
-    # print('[Synthesize batch]')
-    # # final_audio = synthesize_audio(param_defaults, engine, generator, rev_idx)
-    # final_audio = synthesize_audio(loaded_params.tolist(), engine, generator, rev_idx)
-    # final_audio = resample(final_audio, 44100, 22050)
-    #
-    # librosa.output.write_wav("synthesized_audio" + '.wav', final_audio, 22050)
-    # # Generate the test batch for comparison
-    # # audio = synthesize_batch(fixed_params, final_params, engine, generator, param_defaults, rev_idx, orig_wave=fixed_audio, name='check')
 
 

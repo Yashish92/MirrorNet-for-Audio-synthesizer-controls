@@ -1,6 +1,3 @@
-"""
-@Author : Yashish Maduwantha
-"""
 # %%
 import argparse
 import librenderman as rm

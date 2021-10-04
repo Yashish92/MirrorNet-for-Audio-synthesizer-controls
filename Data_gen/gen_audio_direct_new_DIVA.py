@@ -1,6 +1,3 @@
-"""
-@Author : Yashish
-"""
 # %%
 import argparse
 import librenderman as rm
@@ -12,29 +9,6 @@ import glob, os
 import time
 
 my_path = os.path.dirname(os.path.abspath(__file__))
-
-
-#def resample(y, orig_sr, target_sr):
-#    if orig_sr == target_sr:
-#        return y
-#    ratio = float(target_sr) / orig_sr
-#    n_samples = int(np.ceil(y.shape[-1] * ratio))
-#    y_hat = scipy.signal.resample(y, n_samples, axis=-1)  # maybe resampy is better?
-#    # y_hat = resampy.resample(y, orig_sr, target_sr, filter=res_type, axis=-1)
-#    return np.ascontiguousarray(y_hat, dtype=y.dtype)
-#
-#
-#def play_patch(engine, patch_gen, midiNote, midiVelocity, noteLength, renderLength, patch=None):
-#    if patch is None:
-#        patch = patch_gen.get_random_patch()
-#    engine.set_patch(patch)
-#    # Settings to play a note and extract data from the synth.
-#    engine.render_patch(midiNote, midiVelocity, noteLength, renderLength)
-#    # engine.render_patch(midiNote, midiVelocity, noteLength, renderLength, True)
-#    # engine.render_patch(midiNote, midiVelocity, noteLength, renderLength) #render twice to get rid of blip
-#    audio = engine.get_audio_frames()
-#    return np.array(audio), patch
-#
 
 def resample(y, orig_sr, target_sr):
     y = np.array(y)
