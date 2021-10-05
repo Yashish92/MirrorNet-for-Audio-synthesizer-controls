@@ -36,7 +36,6 @@ import datetime
 
 from scipy.io.wavfile import write
 
-from random_generation import get_f0, get_ap
 import inspect
 import nsltools as nsl
 import music_synthesize_piano_extended as music_syn

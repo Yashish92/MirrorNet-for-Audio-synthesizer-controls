@@ -35,8 +35,6 @@ import pickle as pkl
 import datetime
 
 from scipy.io.wavfile import write
-
-from random_generation import get_f0, get_ap
 import inspect
 import nsltools as nsl
 import music_synthesize_DIVA_melodies_7params as music_syn
@@ -869,10 +867,6 @@ def generate_figures(mode="evaluation", name="", load_weights=("", "")):
 
         # predict parameters through waveform
         batch_h_hat = E(batch_spec)
-        # batch_h_hat = transform_params(batch_h_hat)
-        # print(batch_h_hat)
-
-        ############# World ###################################################################################################
         fs = 8000
         music_temp = batch_h_hat[:, 0:params, :].data.cpu().numpy().astype('float64')
         # music_temp[:, 0, :] = (music_temp[:, 0, :] * 12) +62
