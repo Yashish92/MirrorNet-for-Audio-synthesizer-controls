@@ -2,6 +2,8 @@
 
 This repository hosts code and additional results for the paper "MIRRORNET : SENSORIMOTOR INTERACTION INSPIRED LEARNING FOR AUDIO SYNTHESIZER CONTROLS"
 
+![Model architecture](model_archi_v3.png)
+
 ## Webpage with extended results
 
 #### Python
