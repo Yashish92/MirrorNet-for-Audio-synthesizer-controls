@@ -6,7 +6,7 @@ This repository hosts code and additional results for the paper "MIRRORNET : SEN
 
 ## Webpage
 
-For more results on the project, please **visit the following [Website](https://Yashish92.github.io)**.
+For more results on the project, please **visit the following [Website](https://yashish92.github.io/MirrorNet-for-Audio-synthesizer-controls/)**.
 
 #### Python
 
