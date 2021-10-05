@@ -6,7 +6,7 @@ This repository hosts code and additional results for the paper "MIRRORNET : SEN
 
 ## Webpage
 
-For more results on the project, please **visit the corresponding [supporting website](Yashish92.github.io)**.
+For more results on the project, please **visit the corresponding [Website](https://Yashish92.github.io)**.
 
 #### Python
 
