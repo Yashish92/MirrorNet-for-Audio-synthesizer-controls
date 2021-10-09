@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## MirrorNet : Sensorimotor Interaction Inspired Learning for Audio Synthesizer Controls
 
-You can use the [editor on GitHub](https://github.com/Yashish92/MirrorNet-for-Audio-synthesizer-controls/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This website presents audio reconstructions and auditory spectrograms for experiments presented in the paper MirrorNet : Sensorimotor Interaction Inspired Learning for Audio Synthesizer Controls.
 
 ### Markdown
 
