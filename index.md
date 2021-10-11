@@ -10,7 +10,7 @@ Experiments to understand the sensorimotor neural interactions in the human cort
 
 ### Audio Reconstructions
 
-[Input Melodu](/exp1_real_3.wav)
+<audio ref='exp1_real' src="/exp1_real_3.wav" autoPlay loop></audio>
 
 ```markdown
 Syntax highlighted code block
