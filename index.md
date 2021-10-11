@@ -28,6 +28,7 @@ Experiments to understand the sensorimotor neural interactions in the human cort
 <!--             <th>Parameters</th> -->
             <th>Audio</th>
         </tr>
+        <tr>
             <td><audio controls="controls"><source src="audio/exp1_real_1.wav"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><img src="spectrograms/exp1_real_spec1.png"></td>
