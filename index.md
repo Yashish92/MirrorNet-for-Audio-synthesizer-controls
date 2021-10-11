@@ -76,24 +76,24 @@ Experiments to understand the sensorimotor neural interactions in the human cort
         <tr>
             <td><audio controls="controls"><source src="audio/exp3a_real_11.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="300px" height="100px" src="spectrograms/exp3a_original_spec_11.png"></td>
-            <td><img width="300px" height="100px" src="spectrograms/exp3a_DIVA_spec_11.png"></td>
+            <td><img width="300px" height="200px" src="spectrograms/exp3a_original_spec_11.png"></td>
+            <td><img width="300px" height="200px" src="spectrograms/exp3a_DIVA_spec_11.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp3a_DIVA_11.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp3a_real_17.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="300px" height="100px" src="spectrograms/exp3a_original_spec_17.png"></td>
-            <td><img width="300px" height="100px" src="spectrograms/exp3a_DIVA_spec_17.png"></td>
+            <td><img width="300px" height="200px" src="spectrograms/exp3a_original_spec_17.png"></td>
+            <td><img width="300px" height="200px" src="spectrograms/exp3a_DIVA_spec_17.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp3a_DIVA_17.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp3a_real_19.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="300px" height="100px" src="spectrograms/exp3a_original_spec_19.png"></td>
-            <td><img width="300px" height="100px" src="spectrograms/exp3a_DIVA_spec_19.png"></td>
+            <td><img width="300px" height="200px" src="spectrograms/exp3a_original_spec_19.png"></td>
+            <td><img width="300px" height="200px" src="spectrograms/exp3a_DIVA_spec_19.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp3a_DIVA_19.mp3"></audio></td>
         </tr>
