@@ -30,10 +30,10 @@ Experiments to understand the sensorimotor neural interactions in the human cort
         </tr>
         <tr>
             <td><audio controls><source src="audio/exp1_real_1.wav"></audio></td>
-<!--             <td>PARAMS IMG</td> -->
+            <td>PARAMS IMG</td>
             <td><img src="spectrograms/exp1_real_spec1.png"></td>
             <td><img src="spectrograms/exp1_DIVA_spec1.png"></td>
-<!--             <td>PARAMS IMG</td> -->
+            <td>PARAMS IMG</td>
             <td><audio controls><source src="audio/exp1_DIVA_1.wav"></audio></td>
         </tr>
 <!--         <tr>
