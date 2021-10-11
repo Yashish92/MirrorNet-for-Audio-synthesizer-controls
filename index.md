@@ -23,8 +23,8 @@ Experiments to understand the sensorimotor neural interactions in the human cort
         <tr>
             <th>Audio</th>
 <!--             <th>Parameters</th> -->
-            <th width="500">Auditory Spectrogram</th>
-            <th width="500">Auditory Spectrogram</th>
+            <th width="500px">Auditory Spectrogram</th>
+            <th width="500px">Auditory Spectrogram</th>
 <!--             <th>Parameters</th> -->
             <th>Audio</th>
         </tr>
