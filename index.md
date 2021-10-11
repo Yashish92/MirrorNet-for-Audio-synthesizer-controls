@@ -10,32 +10,90 @@ Experiments to understand the sensorimotor neural interactions in the human cort
 
 ### Audio Reconstructions
 
-<audio ref='exp1_real' src="/exp1_real_3.wav" autoPlay loop></audio>
+## Learning DIVA parameters from melodies synthesized with the same set of parameters (set 1)
 
-```markdown
-Syntax highlighted code block
+<div class="figure">
+    <table class="audioTable">
+        <tr>
+            <th rowspan="2">Audio</th>
+            <th colspan="2">Input Melody</th>
+            <th colspan="2">DIVA reconstructed Melody</th>
+            <th rowspan="2">Audio</th>
+        </tr>
+        <tr>
+            <th>Parameters</th>
+            <th>Spectrogram</th>
+            <th>Spectrogram</th>
+            <th>Parameters</th>
+        </tr>
+        <tr>
+            <td><audio controls><source src="audio/exp1_real_1.wav"></audio></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><img src="spectrograms/exp1_real_spec1.png"></td>
+            <td><img src="spectrograms/exp1_DIVA_spec1.png"></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><audio controls><source src="audio/exp1_DIVA_1.wav"></audio></td>
+        </tr>
+<!--         <tr>
+            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_1.mp3"></audio></td>
+            <td>PARAMS IMG</td>
+            <td><img src="audio/neighborhood/n0/p0_dim_1.png"></td>
+            <td><img src="audio/neighborhood/n0/p1_dim_1.png"></td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_1.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_2.mp3"></audio></td>
+            <td>PARAMS IMG</td>
+            <td><img src="audio/neighborhood/n0/p0_dim_2.png"></td>
+            <td><img src="audio/neighborhood/n0/p1_dim_2.png"></td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_2.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_3.mp3"></audio></td>
+            <td>PARAMS IMG</td>
+            <td><img src="audio/neighborhood/n0/p0_dim_3.png"></td>
+            <td><img src="audio/neighborhood/n0/p1_dim_3.png"></td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_3.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_4.mp3"></audio></td>
+            <td>PARAMS IMG</td>
+            <td><img src="audio/neighborhood/n0/p0_dim_4.png"></td>
+            <td><img src="audio/neighborhood/n0/p1_dim_4.png"></td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_4.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_5.mp3"></audio></td>
+            <td>PARAMS IMG</td>
+            <td><img src="audio/neighborhood/n0/p0_dim_5.png"></td>
+            <td><img src="audio/neighborhood/n0/p1_dim_5.png"></td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_5.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_6.mp3"></audio></td>
+            <td>PARAMS IMG</td>
+            <td><img src="audio/neighborhood/n0/p0_dim_6.png"></td>
+            <td><img src="audio/neighborhood/n0/p1_dim_6.png"></td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_6.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_7.mp3"></audio></td>
+            <td>PARAMS IMG</td>
+            <td><img src="audio/neighborhood/n0/p0_dim_7.png"></td>
+            <td><img src="audio/neighborhood/n0/p1_dim_7.png"></td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_7.mp3"></audio></td>
+        </tr> -->
+    </table>
+</div>
 
-# Header 1
-## Header 2
-### Header 3
+## Learning DIVA parameters from melodies synthesized with extra unknown DIVA parameters (set 2)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Yashish92/MirrorNet-for-Audio-synthesizer-controls/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Learning DIVA parameters to synthesize melodies generated from other synthesizers
