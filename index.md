@@ -31,24 +31,24 @@ Experiments to understand the sensorimotor neural interactions in the human cort
         <tr>
             <td><audio controls="controls"><source src="audio/exp1_real_1.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="400px" height="100px" src="spectrograms/exp1_real_spec1.png"></td>
-            <td><img width="400px" height="100px" src="spectrograms/exp1_DIVA_spec1.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp1_real_spec1.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp1_DIVA_spec1.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp1_DIVA_1.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp1_real_2.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="400px" height="100px" src="spectrograms/exp1_real_spec2.png"></td>
-            <td><img width="400px" height="100px" src="spectrograms/exp1_DIVA_spec2.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp1_real_spec2.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp1_DIVA_spec2.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp1_DIVA_2.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp1_real_3.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="400px" height="100px" src="spectrograms/exp1_real_spec3.png"></td>
-            <td><img width="400px" height="100px" src="spectrograms/exp1_DIVA_spec3.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp1_real_spec3.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp1_DIVA_spec3.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp1_DIVA_3.mp3"></audio></td>
         </tr>
@@ -76,24 +76,24 @@ Experiments to understand the sensorimotor neural interactions in the human cort
         <tr>
             <td><audio controls="controls"><source src="audio/exp3a_real_11.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img src="spectrograms/exp3a_original_spec_11.png"></td>
-            <td><img src="spectrograms/exp3a_DIVA_spec_11.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp3a_original_spec_11.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp3a_DIVA_spec_11.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp3a_DIVA_11.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp3a_real_17.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img src="spectrograms/exp3a_original_spec_17.png"></td>
-            <td><img src="spectrograms/exp3a_DIVA_spec_17.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp3a_original_spec_17.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp3a_DIVA_spec_17.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp3a_DIVA_17.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp3a_real_19.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img src="spectrograms/exp3a_original_spec_19.png"></td>
-            <td><img src="spectrograms/exp3a_DIVA_spec_19.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp3a_original_spec_19.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/exp3a_DIVA_spec_19.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp3a_DIVA_19.mp3"></audio></td>
         </tr>
@@ -122,24 +122,24 @@ Experiments to understand the sensorimotor neural interactions in the human cort
         <tr>
             <td><audio controls="controls"><source src="audio/exp_piano_real_5.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img src="spectrograms/piano_original_spec_5.png"></td>
-            <td><img src="spectrograms/piano_DIVA_spec_5.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/piano_original_spec_5.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/piano_DIVA_spec_5.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp_piano_DIVA_5.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp_piano_real_6.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img src="spectrograms/piano_original_spec_6.png"></td>
-            <td><img src="spectrograms/piano_DIVA_spec_6.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/piano_original_spec_6.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/piano_DIVA_spec_6.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp_piano_DIVA_6.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp_piano_real_8.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img src="spectrograms/piano_original_spec_8.png"></td>
-            <td><img src="spectrograms/piano_DIVA_spec_8.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/piano_original_spec_8.png"></td>
+            <td><img width="300px" height="100px" src="spectrograms/piano_DIVA_spec_8.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp_piano_DIVA_8.mp3"></audio></td>
         </tr>
