@@ -16,17 +16,17 @@ Experiments to understand the sensorimotor neural interactions in the human cort
     <table class="audioTable">
         <tr>
 <!--             <th rowspan="2">Audio</th> -->
-            <th colspan="2">Input Melody</th>
-            <th colspan="2">DIVA reconstructed Melody</th>
+            <th colspan="3">Input Melody</th>
+            <th colspan="3">DIVA reconstructed Melody</th>
 <!--             <th rowspan="2">Audio</th> -->
         </tr>
         <tr>
-            <th rowspan="2">Audio</th>
+            <th>Audio</th>
             <th>Parameters</th>
             <th>Spectrogram</th>
             <th>Spectrogram</th>
             <th>Parameters</th>
-            <th rowspan="2">Audio</th>
+            <th>Audio</th>
         </tr>
         <tr>
             <td><audio controls><source src="audio/exp1_real_1.wav"></audio></td>
