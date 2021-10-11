@@ -29,28 +29,26 @@ Experiments to understand the sensorimotor neural interactions in the human cort
             <th>Audio</th>
         </tr>
         <tr>
-            <td width="500">Col2</td>
-            <td width="500">Col3</td>
             <td><audio controls="controls"><source src="audio/exp1_real_1.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="400" height="150" src="spectrograms/exp1_real_spec1.png"></td>
-            <td><img width="400" height="150" src="spectrograms/exp1_DIVA_spec1.png"></td>
+            <td width="500"><img width="400" height="150" src="spectrograms/exp1_real_spec1.png"></td>
+            <td width="500"><img width="400" height="150" src="spectrograms/exp1_DIVA_spec1.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp1_DIVA_1.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp1_real_2.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="400" height="150" src="spectrograms/exp1_real_spec2.png"></td>
-            <td><img width="400" height="150" src="spectrograms/exp1_DIVA_spec2.png"></td>
+            <td width="500"><img width="400" height="150" src="spectrograms/exp1_real_spec2.png"></td>
+            <td width="500"><img width="400" height="150" src="spectrograms/exp1_DIVA_spec2.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp1_DIVA_2.mp3"></audio></td>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp1_real_3.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img width="400" height="150" src="spectrograms/exp1_real_spec3.png"></td>
-            <td><img width="400" height="150" src="spectrograms/exp1_DIVA_spec3.png"></td>
+            <td width="500"><img width="400" height="150" src="spectrograms/exp1_real_spec3.png"></td>
+            <td width="500"><img width="400" height="150" src="spectrograms/exp1_DIVA_spec3.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp1_DIVA_3.mp3"></audio></td>
         </tr>
