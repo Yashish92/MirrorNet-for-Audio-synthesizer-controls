@@ -29,12 +29,12 @@ Experiments to understand the sensorimotor neural interactions in the human cort
             <th>Audio</th>
         </tr>
         <tr>
-            <td><audio controls="controls"><source src="audio/original.mp3"></audio></td>
+            <td><audio controls="controls"><source src="audio/exp1_real_1.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><img src="spectrograms/exp1_real_spec1.png"></td>
             <td><img src="spectrograms/exp1_DIVA_spec1.png"></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><audio controls="controls"><source src="audio/exp1_DIVA_1.wav"></audio></td>
+            <td><audio controls="controls"><source src="audio/exp1_DIVA_1.mp3"></audio></td>
         </tr>
 <!--         <tr>
             <td><audio controls><source src="audio/neighborhood/n0/p0_dim_1.mp3"></audio></td>
