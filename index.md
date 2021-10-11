@@ -120,28 +120,28 @@ Experiments to understand the sensorimotor neural interactions in the human cort
             <th>Audio</th>
         </tr>
         <tr>
-            <td><audio controls="controls"><source src="audio/exp3a_real_11.mp3"></audio></td>
+            <td><audio controls="controls"><source src="audio/exp_piano_real_5.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><img src="spectrograms/piano_original_spec_5.png"></td>
             <td><img src="spectrograms/piano_DIVA_spec_5.png"></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><audio controls="controls"><source src="audio/exp3a_DIVA_11.mp3"></audio></td>
+            <td><audio controls="controls"><source src="audio/exp_piano_DIVA_5.mp3"></audio></td>
         </tr>
         <tr>
-            <td><audio controls="controls"><source src="audio/exp3a_real_17.mp3"></audio></td>
+            <td><audio controls="controls"><source src="audio/exp_piano_real_6.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><img src="spectrograms/piano_original_spec_6.png"></td>
             <td><img src="spectrograms/piano_DIVA_spec_6.png"></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><audio controls="controls"><source src="audio/exp3a_DIVA_17.mp3"></audio></td>
+            <td><audio controls="controls"><source src="audio/exp_piano_DIVA_6.mp3"></audio></td>
         </tr>
         <tr>
-            <td><audio controls="controls"><source src="audio/exp3a_real_19.mp3"></audio></td>
+            <td><audio controls="controls"><source src="audio/exp_piano_real_8.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><img src="spectrograms/piano_original_spec_8.png"></td>
             <td><img src="spectrograms/piano_DIVA_spec_8.png"></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><audio controls="controls"><source src="audio/exp3a_DIVA_19.mp3"></audio></td>
+            <td><audio controls="controls"><source src="audio/exp_piano_DIVA_8.mp3"></audio></td>
         </tr>
     </table>
 </div>
