@@ -66,12 +66,12 @@ Experiments to understand the sensorimotor neural interactions in the human cort
 <!--             <th rowspan="2">Audio</th> -->
         </tr>
         <tr>
-            <th>Audio</th>
+            <th width="200px">Audio</th>
 <!--             <th>Parameters</th> -->
-            <th>Auditory Spectrogram</th>
-            <th>Auditory Spectrogram</th>
+            <th width="500px">Auditory Spectrogram</th>
+            <th width="500px">Auditory Spectrogram</th>
 <!--             <th>Parameters</th> -->
-            <th>Audio</th>
+            <th width="200px">Audio</th>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp3a_real_11.mp3"></audio></td>
@@ -112,12 +112,12 @@ Experiments to understand the sensorimotor neural interactions in the human cort
 <!--             <th rowspan="2">Audio</th> -->
         </tr>
         <tr>
-            <th>Audio</th>
+            <th width="200px">Audio</th>
 <!--             <th>Parameters</th> -->
-            <th>Auditory Spectrogram</th>
-            <th>Auditory Spectrogram</th>
+            <th width="500px">Auditory Spectrogram</th>
+            <th width="500px">Auditory Spectrogram</th>
 <!--             <th>Parameters</th> -->
-            <th>Audio</th>
+            <th width="200px">Audio</th>
         </tr>
         <tr>
             <td><audio controls="controls"><source src="audio/exp_piano_real_5.mp3"></audio></td>
