@@ -52,70 +52,96 @@ Experiments to understand the sensorimotor neural interactions in the human cort
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp1_DIVA_3.mp3"></audio></td>
         </tr>
-        
-        
-        
-        
-<!--         <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_1.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_1.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_1.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_1.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_2.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_2.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_2.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_2.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_3.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_3.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_3.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_3.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_4.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_4.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_4.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_4.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_5.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_5.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_5.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_5.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_6.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_6.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_6.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_6.mp3"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls><source src="audio/neighborhood/n0/p0_dim_7.mp3"></audio></td>
-            <td>PARAMS IMG</td>
-            <td><img src="audio/neighborhood/n0/p0_dim_7.png"></td>
-            <td><img src="audio/neighborhood/n0/p1_dim_7.png"></td>
-            <td>PARAMS IMG</td>
-            <td><audio controls><source src="audio/neighborhood/n0/p1_dim_7.mp3"></audio></td>
-        </tr> -->
     </table>
 </div>
 
 #### Learning DIVA parameters from melodies synthesized with extra unknown DIVA parameters (set 2)
 
+<div class="figure">
+    <table class="audioTable">
+        <tr>
+<!--             <th rowspan="2">Audio</th> -->
+            <th colspan="2">Input Melody</th>
+            <th colspan="2">DIVA reconstructed Melody</th>
+<!--             <th rowspan="2">Audio</th> -->
+        </tr>
+        <tr>
+            <th>Audio</th>
+<!--             <th>Parameters</th> -->
+            <th>Spectrogram</th>
+            <th>Spectrogram</th>
+<!--             <th>Parameters</th> -->
+            <th>Audio</th>
+        </tr>
+        <tr>
+            <td><audio controls="controls"><source src="audio/exp3a_real_11.mp3"></audio></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><img src="spectrograms/exp3a_original_spec_11.eps"></td>
+            <td><img src="spectrograms/exp3a_DIVA_spec_11.eps"></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><audio controls="controls"><source src="audio/exp3a_DIVA_11.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls="controls"><source src="audio/exp3a_real_17.mp3"></audio></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><img src="spectrograms/exp3a_original_spec_17.png"></td>
+            <td><img src="spectrograms/exp3a_DIVA_spec_17.png"></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><audio controls="controls"><source src="audio/exp3a_DIVA_17.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls="controls"><source src="audio/exp3a_real_19.mp3"></audio></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><img src="spectrograms/exp3a_original_spec_19.png"></td>
+            <td><img src="spectrograms/exp3a_DIVA_spec_19.png"></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><audio controls="controls"><source src="audio/exp3a_DIVA_19.mp3"></audio></td>
+        </tr>
+    </table>
+</div>
+
 
 #### Learning DIVA parameters to synthesize melodies generated from other synthesizers
+
+<div class="figure">
+    <table class="audioTable">
+        <tr>
+<!--             <th rowspan="2">Audio</th> -->
+            <th colspan="2">Input Melody</th>
+            <th colspan="2">DIVA reconstructed Melody</th>
+<!--             <th rowspan="2">Audio</th> -->
+        </tr>
+        <tr>
+            <th>Audio</th>
+<!--             <th>Parameters</th> -->
+            <th>Spectrogram</th>
+            <th>Spectrogram</th>
+<!--             <th>Parameters</th> -->
+            <th>Audio</th>
+        </tr>
+        <tr>
+            <td><audio controls="controls"><source src="audio/exp3a_real_11.mp3"></audio></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><img src="spectrograms/piano_original_spec_5.png"></td>
+            <td><img src="spectrograms/piano_DIVA_spec_5.png"></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><audio controls="controls"><source src="audio/exp3a_DIVA_11.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls="controls"><source src="audio/exp3a_real_17.mp3"></audio></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><img src="spectrograms/piano_original_spec_6.png"></td>
+            <td><img src="spectrograms/piano_DIVA_spec_6.png"></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><audio controls="controls"><source src="audio/exp3a_DIVA_17.mp3"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls="controls"><source src="audio/exp3a_real_19.mp3"></audio></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><img src="spectrograms/piano_original_spec_8.png"></td>
+            <td><img src="spectrograms/piano_DIVA_spec_8.png"></td>
+<!--             <td>PARAMS IMG</td> -->
+            <td><audio controls="controls"><source src="audio/exp3a_DIVA_19.mp3"></audio></td>
+        </tr>
+    </table>
+</div>
