@@ -10,21 +10,23 @@ Experiments to understand the sensorimotor neural interactions in the human cort
 
 ### Audio Reconstructions
 
-## Learning DIVA parameters from melodies synthesized with the same set of parameters (set 1)
+#### Learning DIVA parameters from melodies synthesized with the same set of parameters (set 1)
 
 <div class="figure">
     <table class="audioTable">
         <tr>
-            <th rowspan="2">Audio</th>
+<!--             <th rowspan="2">Audio</th> -->
             <th colspan="2">Input Melody</th>
             <th colspan="2">DIVA reconstructed Melody</th>
-            <th rowspan="2">Audio</th>
+<!--             <th rowspan="2">Audio</th> -->
         </tr>
         <tr>
+            <th rowspan="2">Audio</th>
             <th>Parameters</th>
             <th>Spectrogram</th>
             <th>Spectrogram</th>
             <th>Parameters</th>
+            <th rowspan="2">Audio</th>
         </tr>
         <tr>
             <td><audio controls><source src="audio/exp1_real_1.wav"></audio></td>
@@ -93,7 +95,7 @@ Experiments to understand the sensorimotor neural interactions in the human cort
     </table>
 </div>
 
-## Learning DIVA parameters from melodies synthesized with extra unknown DIVA parameters (set 2)
+#### Learning DIVA parameters from melodies synthesized with extra unknown DIVA parameters (set 2)
 
 
-## Learning DIVA parameters to synthesize melodies generated from other synthesizers
+#### Learning DIVA parameters to synthesize melodies generated from other synthesizers
