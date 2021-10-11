@@ -76,8 +76,8 @@ Experiments to understand the sensorimotor neural interactions in the human cort
         <tr>
             <td><audio controls="controls"><source src="audio/exp3a_real_11.mp3"></audio></td>
 <!--             <td>PARAMS IMG</td> -->
-            <td><img src="spectrograms/exp3a_original_spec_11.eps"></td>
-            <td><img src="spectrograms/exp3a_DIVA_spec_11.eps"></td>
+            <td><img src="spectrograms/exp3a_original_spec_11.png"></td>
+            <td><img src="spectrograms/exp3a_DIVA_spec_11.png"></td>
 <!--             <td>PARAMS IMG</td> -->
             <td><audio controls="controls"><source src="audio/exp3a_DIVA_11.mp3"></audio></td>
         </tr>
