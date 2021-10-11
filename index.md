@@ -12,7 +12,7 @@ Experiments to understand the sensorimotor neural interactions in the human cort
 
 #### Learning DIVA parameters from melodies synthesized with the same set of parameters (set 1)
 
-<div class="figure">
+<div style="overflow-x: auto;" class="figure">
     <table class="audioTable">
         <tr>
 <!--             <th rowspan="2">Audio</th> -->
