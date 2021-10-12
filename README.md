@@ -8,9 +8,9 @@ This repository hosts code and additional results for the paper "MIRRORNET : SEN
 
 For more results on the project, please **visit the following [Website](https://yashish92.github.io/MirrorNet-for-Audio-synthesizer-controls/)**.
 
-#### Installation Guide
+## Installation Guide
 
-**The repository is still under development and easy installation steps to directly clone and train the models will be added in the future !!**
+**The repository is still under development and easy installation steps to directly clone and train the models will be added in the future**
 
 Code has been developed with `Python 3.6`. We also use a number of off the shelf libraries which are listed in [`requirements.txt`](requirements.txt). They can be installed with
 
